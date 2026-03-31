@@ -109,9 +109,9 @@ foreach($badges as $badge) {
                                     <strong><?= $badge['name'] ?></strong>
                                     <small class="d-block"><?= $badge['description'] ?></small>
                                     <?php if(!$isUnlocked): ?>
-                                        <small class="d-block text-warning">🔒 Non débloqué</small>
+                                        <small class="d-block text-warning"> Non débloqué</small>
                                     <?php else: ?>
-                                        <small class="d-block text-success">✅ Débloqué !</small>
+                                        <small class="d-block text-success"> Débloqué !</small>
                                     <?php endif; ?>
                                 </div>
                             </div>
@@ -122,7 +122,7 @@ foreach($badges as $badge) {
 
             <div class="card mt-3">
                 <div class="card-header">
-                    <h5 class="mb-0">📊 Progression</h5>
+                    <h5 class="mb-0"> Progression</h5>
                 </div>
                 <div class="card-body">
                     <p><strong>Prochain badge :</strong> Explorateur (découvre 3 terrains)</p>

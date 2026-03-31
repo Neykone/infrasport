@@ -436,7 +436,7 @@ $saved_email = $_COOKIE['remember_email'] ?? '';
                         <input type="checkbox" name="remember" <?= $saved_email ? 'checked' : '' ?>>
                         <span>Se souvenir de moi</span>
                     </label>
-                    <a href="#" class="forgot-link" onclick="alert('📧 Lien de réinitialisation envoyé (simulation)')">Mot de passe oublié ?</a>
+                    <a href="#" class="forgot-link" onclick="alert(' Lien de réinitialisation envoyé (simulation)')">Mot de passe oublié ?</a>
                 </div>
 
                 <button type="submit" class="btn-auth">

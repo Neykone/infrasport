@@ -30,7 +30,7 @@ require_once 'data.php';
 
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2>⚽ Matchs et tournois près de chez toi</h2>
+        <h2> Matchs et tournois près de chez toi</h2>
         <a href="create_match.php" class="btn btn-primary-custom">
             <i class="fas fa-plus"></i> Créer un match
         </a>
@@ -45,16 +45,16 @@ require_once 'data.php';
                         <?= $match['sport'] ?> - <?= $match['lieu'] ?>
                     </div>
                     <div class="card-body">
-                        <p><i class="fas fa-calendar"></i> 📅 <?= $match['date'] ?></p>
-                        <p><i class="fas fa-users"></i> 👥 <?= $match['joueurs'] ?>/<?= $match['max'] ?> participants</p>
-                        <p><i class="fas fa-chart-line"></i> 🎯 Niveau : <?= $match['niveau'] ?></p>
-                        <p><i class="fas fa-user"></i> 👤 Organisé par : <?= $match['organisateur'] ?></p>
+                        <p><i class="fas fa-calendar"></i>  <?= $match['date'] ?></p>
+                        <p><i class="fas fa-users"></i>  <?= $match['joueurs'] ?>/<?= $match['max'] ?> participants</p>
+                        <p><i class="fas fa-chart-line"></i>  Niveau : <?= $match['niveau'] ?></p>
+                        <p><i class="fas fa-user"></i>  Organisé par : <?= $match['organisateur'] ?></p>
 
                         <div class="d-flex gap-2 mt-3">
-                            <button class="btn btn-join" onclick="alert('✅ Vous avez rejoint le match ! Notification envoyée à l\'organisateur.')">
+                            <button class="btn btn-join" onclick="alert(' Vous avez rejoint le match ! Notification envoyée à l\'organisateur.')">
                                 <i class="fas fa-check"></i> Rejoindre
                             </button>
-                            <button class="btn btn-recommend" onclick="alert('👥 Invitation envoyée à vos amis !')">
+                            <button class="btn btn-recommend" onclick="alert(' Invitation envoyée à vos amis !')">
                                 <i class="fas fa-user-plus"></i> Inviter des amis
                             </button>
                         </div>
@@ -63,8 +63,8 @@ require_once 'data.php';
                         <div class="mt-2">
                             <small class="text-muted">
                                 <i class="fas fa-robot"></i>
-                                <a href="#" onclick="alert('💡 Recommandation : Karim (500m) aime aussi le football et cherche un match !')">
-                                    🤝 Voir participants recommandés
+                                <a href="#" onclick="alert(' Recommandation : Karim (500m) aime aussi le football et cherche un match !')">
+                                     Voir participants recommandés
                                 </a>
                             </small>
                         </div>
@@ -75,19 +75,19 @@ require_once 'data.php';
     </div>
 
     <!-- Section tournois -->
-    <h3 class="mt-5 mb-3">🏆 Tournois à venir</h3>
+    <h3 class="mt-5 mb-3"> Tournois à venir</h3>
     <div class="row">
         <div class="col-md-4">
             <div class="card bg-warning bg-opacity-10">
                 <div class="card-body">
-                    <h5>🏆 Tournoi de Football</h5>
-                    <p>📅 Samedi 15 Mars - Parc Central</p>
-                    <p>👥 12 équipes inscrites</p>
+                    <h5> Tournoi de Football</h5>
+                    <p> Samedi 15 Mars - Parc Central</p>
+                    <p> 12 équipes inscrites</p>
                     <button class="btn btn-sm btn-primary-custom" onclick="alert('Inscription au tournoi confirmée !')">
                         S'inscrire
                     </button>
                     <div class="mt-2">
-                        <small><i class="fas fa-robot"></i> <a href="#">🔔 3 amis intéressés</a></small>
+                        <small><i class="fas fa-robot"></i> <a href="#"> 3 amis intéressés</a></small>
                     </div>
                 </div>
             </div>
@@ -95,14 +95,14 @@ require_once 'data.php';
         <div class="col-md-4">
             <div class="card bg-success bg-opacity-10">
                 <div class="card-body">
-                    <h5>🏀 3x3 Basketball</h5>
-                    <p>📅 Dimanche 16 Mars - City Stade</p>
-                    <p>👥 8 équipes inscrites</p>
+                    <h5> 3x3 Basketball</h5>
+                    <p> Dimanche 16 Mars - City Stade</p>
+                    <p> 8 équipes inscrites</p>
                     <button class="btn btn-sm btn-primary-custom" onclick="alert('Inscription au tournoi confirmée !')">
                         S'inscrire
                     </button>
                     <div class="mt-2">
-                        <small><i class="fas fa-robot"></i> <a href="#">💪 Niveau intermédiaire recommandé</a></small>
+                        <small><i class="fas fa-robot"></i> <a href="#"> Niveau intermédiaire recommandé</a></small>
                     </div>
                 </div>
             </div>
@@ -110,14 +110,14 @@ require_once 'data.php';
         <div class="col-md-4">
             <div class="card bg-info bg-opacity-10">
                 <div class="card-body">
-                    <h5>🏃 Marathon 5km</h5>
-                    <p>📅 Dimanche 20 Mars - Jardin Bouregreg</p>
-                    <p>👥 78 participants</p>
+                    <h5> Marathon 5km</h5>
+                    <p> Dimanche 20 Mars - Jardin Bouregreg</p>
+                    <p> 78 participants</p>
                     <button class="btn btn-sm btn-primary-custom" onclick="alert('Inscription au marathon confirmée !')">
                         S'inscrire
                     </button>
                     <div class="mt-2">
-                        <small><i class="fas fa-robot"></i> <a href="#">🏅 Challenge : 10km pour les avancés</a></small>
+                        <small><i class="fas fa-robot"></i> <a href="#"> Challenge : 10km pour les avancés</a></small>
                     </div>
                 </div>
             </div>

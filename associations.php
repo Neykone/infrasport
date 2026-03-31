@@ -30,14 +30,14 @@ require_once 'data.php';
 
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2>🏢 Associations sportives</h2>
-        <button class="btn btn-primary-custom" onclick="alert('📢 Formulaire de création d\'association (simulation)')">
+        <h2> Associations sportives</h2>
+        <button class="btn btn-primary-custom" onclick="alert(' Formulaire de création d\'association (simulation)')">
             <i class="fas fa-plus"></i> Créer une association
         </button>
     </div>
 
     <!-- Événements des associations -->
-    <h3 class="mb-3">📅 Événements à venir</h3>
+    <h3 class="mb-3"> Événements à venir</h3>
     <div class="row">
         <?php foreach($events as $event): ?>
             <div class="col-md-6">
@@ -47,17 +47,17 @@ require_once 'data.php';
                     </div>
                     <div class="card-body">
                         <h5><?= $event['titre'] ?></h5>
-                        <p><i class="fas fa-calendar"></i> 📅 <?= $event['date'] ?></p>
-                        <p><i class="fas fa-location-dot"></i> 📍 <?= $event['lieu'] ?></p>
+                        <p><i class="fas fa-calendar"></i>  <?= $event['date'] ?></p>
+                        <p><i class="fas fa-location-dot"></i>  <?= $event['lieu'] ?></p>
                         <p><i class="fas fa-users"></i> 👥 <?= $event['participants'] ?>/<?= $event['max'] ?> participants</p>
-                        <p><i class="fas fa-tag"></i> 💰 <?= $event['prix'] ?></p>
+                        <p><i class="fas fa-tag"></i>  <?= $event['prix'] ?></p>
                         <p><?= $event['description'] ?></p>
 
                         <div class="d-flex gap-2">
-                            <button class="btn btn-join" onclick="alert('✅ Inscription à l\'événement confirmée !')">
+                            <button class="btn btn-join" onclick="alert(' Inscription à l\'événement confirmée !')">
                                 <i class="fas fa-check"></i> Participer
                             </button>
-                            <button class="btn btn-secondary" onclick="alert('👀 Vous participerez en tant que spectateur')">
+                            <button class="btn btn-secondary" onclick="alert(' Vous participerez en tant que spectateur')">
                                 <i class="fas fa-eye"></i> Spectateur
                             </button>
                         </div>
@@ -65,8 +65,8 @@ require_once 'data.php';
                         <!-- Bouton recommandation -->
                         <div class="mt-2">
                             <small><i class="fas fa-robot text-success"></i>
-                                <a href="#" onclick="alert('💡 Recommandation : 3 de vos amis participent déjà !')">
-                                    🤝 3 amis participent
+                                <a href="#" onclick="alert(' Recommandation : 3 de vos amis participent déjà !')">
+                                     3 amis participent
                                 </a>
                             </small>
                         </div>
@@ -79,7 +79,7 @@ require_once 'data.php';
     <!-- Marketplace simple -->
     <div class="card mt-4 bg-light">
         <div class="card-body">
-            <h4>🛍️ Marketplace locale</h4>
+            <h4> Marketplace locale</h4>
             <div class="row">
                 <div class="col-md-3">
                     <div class="text-center p-2">

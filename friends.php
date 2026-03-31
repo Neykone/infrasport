@@ -37,14 +37,14 @@ if(isset($_GET['invite'])) {
 
 <div class="container mt-4">
     <?php if(isset($_GET['success'])): ?>
-        <div class="alert alert-success">✅ Invitation envoyée !</div>
+        <div class="alert alert-success"> Invitation envoyée !</div>
     <?php endif; ?>
 
     <div class="row">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    <h5 class="mb-0">👥 Mes amis</h5>
+                    <h5 class="mb-0"> Mes amis</h5>
                 </div>
                 <div class="card-body">
                     <div class="row">
@@ -62,7 +62,7 @@ if(isset($_GET['invite'])) {
                                             <i class="fas fa-map-marker-alt"></i> <?= $friend['distance'] ?>
                                         </small>
                                         <div class="mt-2">
-                                            <button class="btn btn-sm btn-recommend" onclick="alert('🔔 Notification envoyée à <?= $friend['name'] ?>')">
+                                            <button class="btn btn-sm btn-recommend" onclick="alert(' Notification envoyée à <?= $friend['name'] ?>')">
                                                 <i class="fas fa-bell"></i> Inviter à jouer
                                             </button>
                                         </div>
@@ -79,7 +79,7 @@ if(isset($_GET['invite'])) {
             <!-- Inviter des amis -->
             <div class="card mb-3">
                 <div class="card-header bg-success text-white">
-                    <h5 class="mb-0">📨 Inviter des amis</h5>
+                    <h5 class="mb-0"> Inviter des amis</h5>
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
@@ -94,11 +94,11 @@ if(isset($_GET['invite'])) {
                     <hr>
                     <h6><i class="fas fa-robot text-success"></i> Recommandations</h6>
                     <div class="alert alert-light">
-                        <small>💡 Selon tes centres d'intérêt :</small>
+                        <small> Selon tes centres d'intérêt :</small>
                         <ul class="mt-2">
-                            <li><a href="#" onclick="alert('👥 Karim aime aussi le football - Distance 500m')">Karim (Football) à 500m</a></li>
-                            <li><a href="#" onclick="alert('👥 Sofia recherche des joueurs pour un match de basketball')">Sofia cherche des joueurs</a></li>
-                            <li><a href="#" onclick="alert('👥 Groupe "Sportifs du quartier" - 15 membres')">Groupe "Sportifs du quartier"</a></li>
+                            <li><a href="#" onclick="alert(' Karim aime aussi le football - Distance 500m')">Karim (Football) à 500m</a></li>
+                            <li><a href="#" onclick="alert(' Sofia recherche des joueurs pour un match de basketball')">Sofia cherche des joueurs</a></li>
+                            <li><a href="#" onclick="alert(' Groupe "Sportifs du quartier" - 15 membres')">Groupe "Sportifs du quartier"</a></li>
                         </ul>
                     </div>
                 </div>
@@ -111,16 +111,16 @@ if(isset($_GET['invite'])) {
                 </div>
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center mb-2">
-                        <span>🏆 Les Footeux</span>
-                        <button class="btn btn-sm btn-recommend" onclick="alert('✅ Demande d\'adhésion envoyée')">Rejoindre</button>
+                        <span> Les Footeux</span>
+                        <button class="btn btn-sm btn-recommend" onclick="alert(' Demande d\'adhésion envoyée')">Rejoindre</button>
                     </div>
                     <div class="d-flex justify-content-between align-items-center mb-2">
-                        <span>🏀 Basket City</span>
-                        <button class="btn btn-sm btn-recommend" onclick="alert('✅ Demande d\'adhésion envoyée')">Rejoindre</button>
+                        <span> Basket City</span>
+                        <button class="btn btn-sm btn-recommend" onclick="alert(' Demande d\'adhésion envoyée')">Rejoindre</button>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
-                        <span>🏃 Running Club</span>
-                        <button class="btn btn-sm btn-recommend" onclick="alert('✅ Demande d\'adhésion envoyée')">Rejoindre</button>
+                        <span> Running Club</span>
+                        <button class="btn btn-sm btn-recommend" onclick="alert(' Demande d\'adhésion envoyée')">Rejoindre</button>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@ if(isset($_GET['invite'])) {
     function inviteFriend() {
         let email = document.getElementById('friendEmail').value;
         if(email) {
-            alert('✅ Invitation envoyée à ' + email + ' !');
+            alert(' Invitation envoyée à ' + email + ' !');
             // Simuler l'incrémentation
             window.location.href = '?invite=1';
         } else {

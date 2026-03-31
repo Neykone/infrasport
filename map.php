@@ -42,7 +42,7 @@ require_once 'data.php';
 
 <div class="hero">
     <div class="container">
-        <h1>🗺️ Découvre les terrains près de chez toi</h1>
+        <h1> Découvre les terrains près de chez toi</h1>
         <p>Parcs, gymnases, terrains universitaires... Trouve ton spot idéal !</p>
     </div>
 </div>
@@ -56,10 +56,10 @@ require_once 'data.php';
         <div class="row align-items-center">
             <div class="col-md-8">
                 <i class="fas fa-robot text-success me-2"></i>
-                <strong>💡 Recommandation :</strong> Basé sur ta localisation, nous te suggérons <strong>Parc Central</strong> (500m) - Idéal pour le football !
+                <strong> Recommandation :</strong> Basé sur ta localisation, nous te suggérons <strong>Parc Central</strong> (500m) - Idéal pour le football !
             </div>
             <div class="col-md-4 text-md-end">
-                <button class="btn btn-recommend" onclick="alert('🔔 Notification : Parc Central recommandé !')">
+                <button class="btn btn-recommend" onclick="alert(' Notification : Parc Central recommandé !')">
                     <i class="fas fa-thumbs-up"></i> Voir la recommandation
                 </button>
             </div>
@@ -67,7 +67,7 @@ require_once 'data.php';
     </div>
 
     <!-- Liste des terrains -->
-    <h3 class="mb-3">📋 Tous les terrains disponibles</h3>
+    <h3 class="mb-3"> Tous les terrains disponibles</h3>
     <div class="row">
         <?php foreach($terrains as $terrain): ?>
             <div class="col-md-4">
@@ -81,7 +81,7 @@ require_once 'data.php';
                         <p><i class="fas fa-clock"></i> <strong>Horaires :</strong> <?= $terrain['horaires'] ?></p>
                         <p><i class="fas fa-coins"></i> <strong>Prix :</strong> <?= $terrain['prix'] ?></p>
                         <p><i class="fas fa-users"></i> <strong>Capacité :</strong> <?= $terrain['places'] ?> personnes</p>
-                        <button class="btn btn-sm btn-primary-custom" onclick="alert('📍 Itinéraire vers <?= $terrain['name'] ?>')">
+                        <button class="btn btn-sm btn-primary-custom" onclick="alert(' Itinéraire vers <?= $terrain['name'] ?>')">
                             <i class="fas fa-directions"></i> Y aller
                         </button>
                     </div>
@@ -110,9 +110,9 @@ require_once 'data.php';
         marker.bindPopup(`
                 <div class="info-window">
                     <h6>${terrain.name}</h6>
-                    <p><strong>🏀 Sports :</strong> ${terrain.sports}<br>
-                    <strong>⏰ Horaires :</strong> ${terrain.horaires}<br>
-                    <strong>💰 Prix :</strong> ${terrain.prix}</p>
+                    <p><strong> Sports :</strong> ${terrain.sports}<br>
+                    <strong> Horaires :</strong> ${terrain.horaires}<br>
+                    <strong> Prix :</strong> ${terrain.prix}</p>
                     <button class="btn btn-sm btn-primary-custom" onclick="alert('Réservation simulée pour ${terrain.name}')">
                         Réserver
                     </button>
